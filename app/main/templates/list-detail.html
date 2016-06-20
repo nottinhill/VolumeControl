@@ -9,13 +9,17 @@
 
      <div class="item range">
       <i class="icon ion-volume-low"></i>
-      <input type="range" name="volume"  value="{{volume.volume.value}}" ng-model="volume.volume.value">
+      <input type="range" name="volume"  value="{{volume.volume.value}}" ng-model="volume.volume.value" on-release="volume.onRelease()">
       <i class="icon ion-volume-high"></i>
     </div>
 
     <br> <br>
 
-    {{volume.volume.value}}
+    Silder: {{volume.volume.value}}
+
+    <br><br>
+
+    {{volume.result}}
 
   </ion-content>
 </ion-view>
